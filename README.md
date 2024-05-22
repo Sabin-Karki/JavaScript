@@ -7,18 +7,18 @@ Welcome to my JavaScript Projects Repository! This repository contains a collect
 ### 1.Speech Recognition
 A text-to-speech application that reads out text input by the user. Click the "Play" button to hear the text spoken aloud.
 - **Files**: `Speech.html`, `Speech.js`
-- ![Speech Recognition](music.png)
+
 
 ### 2.Crypto Tracker
 A real-time cryptocurrency tracking website that uses an API to fetch and display the latest values of various cryptocurrencies.
 - **Files**: `crypto.html`, `crypto.js`
-- ![Crypto Tracker](eth.jpg)
+
 
 
 ### 3. Whack-a-Mole Game
 A fun and interactive Whack-a-Mole game built with JavaScript. Click on the moles as they appear to score points.
 - **Files**: `mole.html`, `mole.js`
-- ![Whack-a-Mole](monty-mole.png)
+
 
 ### 4. Slot Machine
 A slot machine game implemented using JavaScript. Spin the reels and try your luck!
