@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTO EXCHANGE</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    body{
+    background-color: blueviolet;
+    }
+    /* .container{
+        width: 100px;
+        height: 100vh;
+        background-image: url(bg.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-left:100%;
+     
+     color:white;
+    }
+       */
+       nav{
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+
+       }
+       .logo{
+width: 60px;
+cursor: pointer;
+       }
+       nav ul{
+        flex: 1;
+       }
+       nav ul li{
+        display: inline-block;
+        margin: 10px 20px;
+       }
+       nav ul li a{
+        text-decoration: none;
+        color: white;
+       
+       }
+       nav .btn{
+        color: white;
+        text-decoration: none;
+        border:1px solid white;
+        padding: 10px 30px;
+        border-radius: 20px;
+         
+.content{
+margin-top: 13%;
+}
+
+       }
+       .content h1{
+        font-size: 67px;
+        margin-bottom: 13px;
+        color: white;
+
+        
+       }
+       span{
+       color: gold;
+       }
+       p{
+        line-height: 22px;
+        font-size: 15px;
+       }
+       .content .bwn{
+        display: inline-block;
+        margin-top: 30px;
+        background: chocolate;
+        text-decoration: none;
+        border-radius: 14px;
+        padding: 10px;
+        cursor: pointer;
+        color: white;
+       } 
+       /* .coinlist{
+        position: absolute;
+        right: 10%;
+        bottom: 50px;
+        align-items: center;
+
+       }
+       .coin{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin: 0 15px;
+        border: 1px solid white;
+        color: gold;
+       border-radius: 8px;
+        padding: 20px 28px;
+       
+}
+.coin img{
+    margin-right: 10px; */
+    .coinlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+.coin {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    border: 9px solid wheat;
+    margin-top: 5%;
+    margin-left: 20px;
+    padding: 18px 18px;
+    padding-bottom: 3px;
+  
+}
+.coin img{
+    cursor: pointer;
+    border: 2px solid white;
+}
+h3{
+    color: white;
+
+}
+p{
+    color:goldenrod;
+}
+/* Other styles for .coin here */
+
+
+</style>
+<body>
+
+    <div class="container">
+        <nav>
+            <img src="dog.jpg" alt="" class="logo">
+            <ul>
+                
+                    <li><a href="#">Market</a>      </li>  
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">White Papers</a></li>
+                    <li><a href="#">About us</a></li>
+               
+            </ul>
+            <a href="#" class="btn">EN</a>
+        </nav>
+        <div class="content">
+            <h1>
+                BUY & SELL<br> <span>Crypto</span>
+            </h1>
+            <p>World's biggest cryptocurrency exchange available on web <br>and mobile phone.</p>
+            <a href="https://coinmarketcap.com/" class="bwn" target="_blank">EXPLORE</a>
+        </div>
+        <div class="coinlist">
+            <div class="coin">
+                <img src="bit.jpg" alt="" style="height: 70px;">
+                <div>
+                    <h3><span id="bitcoin"></span></h3>
+                    <p>Bitcoin</p>
+                </div>
+                </div>
+
+
+                    <div class="coin">
+                        <img src="eth.jpg" alt="" style="height: 70px;">
+                        <div>
+                            <h3><span id="ethereum"></span></h3>
+                            <p>etherium</p>
+                        </div>
+                    </div>
+                            <div class="coin">
+                                <img src="dog.jpg" alt="" style="height: 70px;">
+                                <div>
+                                    <h3><span id="dogecoin"> </span></h3>
+                                    <p>Dodgecoin</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  <script src="Games/crypto.js"></script>
+</body>
+</html>
