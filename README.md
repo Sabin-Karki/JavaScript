@@ -4,14 +4,16 @@ Welcome to my JavaScript Projects Repository! This repository contains a collect
 
 ## Projects
 
-### 1. Crypto Tracker
+### 1.Speech Recognition
+A text-to-speech application that reads out text input by the user. Click the "Play" button to hear the text spoken aloud.
+- **Files**: `Speech.html`, `Speech.js`
+- ![Speech Recognition](music.png)
+
+### 2.Crypto Tracker
 A real-time cryptocurrency tracking website that uses an API to fetch and display the latest values of various cryptocurrencies.
 - **Files**: `crypto.html`, `crypto.js`
 - ![Crypto Tracker](eth.jpg)
 
-### 2. Speech Recognition
-A simple speech recognition app that captures and transcribes speech using the Web Speech API.
-- **Files**: `Speech.html`, `Speech.js`
 
 ### 3. Whack-a-Mole Game
 A fun and interactive Whack-a-Mole game built with JavaScript. Click on the moles as they appear to score points.
@@ -40,4 +42,4 @@ To get a local copy of the projects up and running, follow these simple steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Sabin-Karki/JavaScript.git
