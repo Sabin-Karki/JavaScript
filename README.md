@@ -20,9 +20,6 @@ A fun and interactive Whack-a-Mole game built with JavaScript. Click on the mole
 - **Files**: `mole.html`, `mole.js`
 
 
-### 4. Slot Machine
-A slot machine game implemented using JavaScript. Spin the reels and try your luck!
-- **Files**: `slotmachine.js`
 
 ## Assets
 
