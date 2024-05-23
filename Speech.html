@@ -94,15 +94,14 @@ select{
 <body>
     <div class="hero">
         <h1>TEXT TO SPEECH <span>CONVERTER</span></h1>
-        <textarea placeholder="Write anything here......." style="color:black;"></textarea>
+        <textarea id="text" placeholder="Write anything here......."></textarea>
         <div class="row">
-        
-            <button><img src="music.png" >Listen</button>
+            <select id="voiceSelect"></select>
+            <button id="speakButton"><img src="music.png">Play</button>
         </div>
-
     </div>
-   
-  
+    
+ 
     <script src="Speech.js"></script>
 </body>
 </html>
