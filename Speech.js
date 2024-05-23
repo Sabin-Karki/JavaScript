@@ -1,16 +1,30 @@
+document.title = "TEXT TO SPEECH";
 
-document.title="TEXT TO SPEECH "
 let speech = new SpeechSynthesisUtterance();
+let voices = [];
+const voiceSelect = document.getElementById("voiceSelect");
+const textArea = document.getElementById("text");
+const speakButton = document.getElementById("speakButton");
 
-let voices=[];
-let voiceSelect=document.querySelector("select")
-window.speechSynthesis.onvoiceschanged=()=>{
-    voices =window.SpeechSynthesis.getVoices();
-    speech.voice[0];//so by default it will speak in default voice/language of device
-    voices.forEach((voice,i)=>(voiceSelect.options[i]=new Option(voice.name,i)));
+function populateVoices() {
+    voices = window.speechSynthesis.getVoices();
+    voiceSelect.innerHTML = voices
+        .map((voice, i) => `<option value="${i}">${voice.name} (${voice.lang})</option>`)
+        .join('');
+    if (voices.length > 0) {
+        speech.voice = voices[0];
+    }
 }
-document.querySelector("button").addEventListener("click",()=>{
-    speech.text=document.querySelector("textarea").value
-    window.speechSynthesis.speak(speech);
-})
 
+window.speechSynthesis.onvoiceschanged = populateVoices;
+
+voiceSelect.addEventListener('change', () => {
+    speech.voice = voices[voiceSelect.value];
+});
+
+speakButton.addEventListener("click", () => {
+    speech.text = textArea.value;
+    window.speechSynthesis.speak(speech);
+});
+
+populateVoices(); // Initial population of voices
